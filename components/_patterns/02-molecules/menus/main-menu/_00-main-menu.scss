@@ -4,13 +4,10 @@ $main-menu-medium: 43em;
 // Nav
 .main-nav {
   display: none;
-  background-color: $blue;
 
   @include breakpoint($main-menu-medium) {
     display: block;
   }
-
-  @include breakout;
 
   &--open {
     background-color: $white;

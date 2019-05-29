@@ -1,6 +1,6 @@
 // A
 .main-menu__link {
-  color: $white;
+  color: $gray-dark;
   display: block;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -14,7 +14,7 @@
 
   @include breakpoint($main-menu-medium) {
     border-bottom: none;
-    color: $white;
+    color: $gray-dark;
     display: inline-block;
     font-size: 1.1rem;
     padding: $space $space-double $space $space;

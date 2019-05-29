@@ -1,11 +1,4 @@
-img_src:
-  '../../images/logo.png'
-img_alt:
-  'Logo'
-img_url:
-  'https://github.com/fourkitchens/bline'
-image_link_base_class:
-  'logo'
+logo_link_url: "#"
 
 menu_items:
   - title: "Menu Item 1"

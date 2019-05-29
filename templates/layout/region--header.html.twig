@@ -13,12 +13,7 @@
  */
 #}
 {% extends "@organisms/site/site-header/site-header.twig" %}
-{% block logo %}
-  {{ elements.sitebranding }}
-{% endblock %}
-{% block search %}
-  {{ elements.searchform }}
-{% endblock %}
-{% block menu %}
-  {{ elements.mainnavigation }}
+
+{% block header_content %}
+  {{ content }}
 {% endblock %}
