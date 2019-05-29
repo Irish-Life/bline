@@ -1,14 +1,20 @@
-@mixin button($bg:$black, $color:$white, $hoverBg: $gray, $hoverColor: $white) {
+@mixin button($bg:$green-dark, $color:$white, $hoverBg: $green-light, $hoverColor: $white) {
   background-color: $bg;
   border: none;
+  // font-weight: 800;
   color: $color;
   cursor: pointer;
   line-height: 1.4;
-  padding: 0.5em 1em;
+  // padding: 0.5em 1em;
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
+  //
+  border-radius: 3px;
+  background-image: linear-gradient(122deg, #5261ac 0% #50c9b5 100%);
+  box-shadow: 0 0.8em 32 0 rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  padding: 0.6rem 2rem;
 
   &:visited {
     color: $color;
@@ -19,20 +25,32 @@
   }
 }
 
-@mixin button-alt {
-  @include button($gray, $white, $black);
 
+@mixin button-alt {
+  @include button($white, $green-dark, $white);
+
+  border: 3px solid $green-dark;
   font-weight: 600;
   font-size: 0.7rem;
   padding: 0.4em 0.6em 0.3em;
+
+  &:hover {
+    border: 3px solid $green-light;
+    // color: $green-light;
+  }
 }
 
-@mixin button-alt-2 {
-  @include button($gray-lightest, $black, $gray-lighter);
+@mixin button-cta {
+  @include button($white, $green-dark, $white);
 
-  font-size: 0.8rem;
+  border: 3px solid $green-dark;
   font-weight: 600;
   text-transform: none;
+
+  &:hover {
+    background-color: $green-dark;
+    color: $white;
+  }
 }
 
 .button {
@@ -45,6 +63,6 @@
 
   &--alt-2 {
     @include button;
-    @include button-alt-2;
+    @include button-cta;
   }
 }

@@ -6,8 +6,10 @@
 // components/_patterns/00-base/_breakpoints.scss
 
 // Fonts
-$font-body: Georgia, Times, "Times New Roman", serif;
-$font-heading: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$font-body: "Lato", arial, Helvetica, sans-serif;
+$font-heading: "Lato", arial, Helvetica, sans-serif;
 
 // Spacing
 $space: 1rem;
