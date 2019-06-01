@@ -12,8 +12,9 @@
  * @see template_preprocess_region()
  */
 #}
-{% extends "@organisms/site/site-header/site-header.twig" %}
+{% embed "@organisms/site/site-header/site-header.twig" %}
+  {% set img_alt = "Bline Logo" %}
+  {% set img_src = elements.bline_sitebranding.content.site_logo['#uri'] %}
+  {% set  menu_items = elements.mainnavigation.content["#items"]%}
+{% endembed %}
 
-{% block header_content %}
-  {{ content }}
-{% endblock %}
