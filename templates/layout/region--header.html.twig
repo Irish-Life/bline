@@ -13,8 +13,8 @@
  */
 #}
 {% embed "@organisms/site/site-header/site-header.twig" %}
-  {% set img_alt = "Bline Logo" %}
-  {% set img_src = elements.bline_sitebranding.content.site_logo['#uri'] %}
-  {% set  menu_items = elements.mainnavigation.content["#items"]%}
+  {% block header_content %}
+    {{ elements }}
+  {% endblock %}
 {% endembed %}
 
