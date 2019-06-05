@@ -1,0 +1,9 @@
+
+.paragraph--section {
+  @include breakout;
+  background-color: $gray-lightest;
+}
+
+.paragraph--section__inner {
+  @include wrapper;
+}
