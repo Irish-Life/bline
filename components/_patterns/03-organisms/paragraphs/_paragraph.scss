@@ -2,8 +2,24 @@
 .paragraph--section {
   @include breakout;
   background-color: $gray-lightest;
+  padding: $space-double 0 $space-triple 0;
 }
 
 .paragraph--section__inner {
   @include wrapper;
+  text-align: center;
 }
+
+.paragraph--section__heading {
+  color: $purple-regular;
+}
+
+.paragraph--section--purple {
+  background-color: $purple-regular;
+
+  .paragraph--section__heading {
+    color: $white;
+  }
+}
+
+
