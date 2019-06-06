@@ -49,6 +49,6 @@
   set inner = "paragraph--" ~ paragraph.bundle ~ "__inner"|clean_class
 %}
 <div class="{{ inner }}">
-  {{ content }}
+  {{ content | without("field_bg_colour_test") }}
 </div>
 </div>
