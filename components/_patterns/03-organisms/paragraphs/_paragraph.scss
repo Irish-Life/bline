@@ -14,12 +14,67 @@
   color: $purple-regular;
 }
 
+
+
+.paragraph--section--green {
+  background-color: $green-dark;
+
+  .paragraph--section__heading {
+    color: $white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+
+.paragraph--section--indigo {
+  background-color: $indigo-regular;
+
+  .paragraph--section__heading {
+    color: $white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+
 .paragraph--section--purple {
   background-color: $purple-regular;
 
   .paragraph--section__heading {
     color: $white;
   }
+
+  p {
+    color: $white;
+  }
 }
 
+.paragraph--section--blue {
+  background-color: $blue-light;
+
+  .paragraph--section__heading {
+    color: $white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.paragraph--section--orange {
+  background-color: $orange-yellow;
+
+  .paragraph--section__heading {
+    color: $white;
+  }
+
+  p {
+    color: white;
+  }
+}
 

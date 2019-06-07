@@ -36,30 +36,10 @@
  * @see template_preprocess_field()
  */
 #}
-
-{% if label_hidden %}
-  {% if multiple %}
-    <div{{ attributes }}>
-      {% for item in items %}
-        <div{{ item.attributes }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
-{% else %}
-  <div{{ attributes }}>
-    <div{{ title_attributes }}>{{ label }}</div>
-    {% if multiple %}
-      <div>
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
-  </div>
-{% endif %}
+{% for item in items %}
+  {% include "@atoms/02-text/00-headings/_heading.twig" with {
+  heading: item.content["#text"],
+  heading_level: 1,
+  heading_base_class: "paragraph--masthead__heading"
+  } %}
+{% endfor %}

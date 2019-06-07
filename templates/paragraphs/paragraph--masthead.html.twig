@@ -36,26 +36,4 @@
  * @ingroup themeable
  */
 #}
-{% set bgcolor = content.field_bg_colour_test[0]["#markup"] ?: color_class %}
-{% set bundle = paragraph.bundle ?: base_class %}
-{%
-  set classes = [
-    "paragraph"|clean_class,
-    "paragraph--" ~ bundle|clean_class,
-    "paragraph--" ~ bundle|clean_class ~ "--" ~ bgcolor|clean_class,
-  ]
-%}
-{% if attributes %}
-<div{{ attributes.addClass(classes) }}>
-{% else %}
-<div class="{% for class in classes %}{{ class ~ " " }}{% endfor %}">
-{% endif %}
-
-<div class="paragraph--{{ bundle }}__inner">
-{% if content %}
-  {{ content | without("field_bg_colour_test", "field_section_image.label") }}
-{% else %}
-  {{ dummy_content|raw }}
-{% endif %}
-</div>
-</div>
+{% include "@organisms/paragraphs/paragraph--masthead.twig" %}
