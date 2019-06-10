@@ -36,8 +36,9 @@
  * @ingroup themeable
  */
 #}
-{% set bgcolor = content.field_bg_colour_test[0]["#markup"] ?: color_class %}
+{% set bgcolor = content.field_background_colour[0]["#markup"] ?: color_class %}
 {% set bundle = paragraph.bundle ?: base_class %}
+{% set image = content.field_section_image|without("label") %}
 {%
   set classes = [
     "paragraph"|clean_class,
@@ -46,14 +47,28 @@
   ]
 %}
 {% if attributes %}
-<div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }}>
 {% else %}
-<div class="{% for class in classes %}{{ class ~ " " }}{% endfor %}">
+  <div class="{% for class in classes %}{{ class ~ " " }}{% endfor %}">
 {% endif %}
 
+{{ title_suffix.contextual_links }}
 <div class="paragraph--{{ bundle }}__inner">
 {% if content %}
-  {{ content | without("field_bg_colour_test", "field_section_image.label") }}
+  {{ content.field_main_heading }}
+    {% if content.field_sub_heading %}
+      {{ content.field_sub_heading }}
+    {% endif %}
+    {% if content.field_section_image["#title"] %}
+    {{ attributes.removeClass(classes) }}{{ kint(content.field_section_image) }}
+      {% include "@base/layouts/grid/00-grid.twig" with {
+        items: [image, content.field_body_text],
+        grid_base_class: "grid",
+        grid_modifiers: ["columns-2"]
+        } %}
+    {% else %}
+      {{ content.field_body_text }}
+    {% endif %}
 {% else %}
   {{ dummy_content|raw }}
 {% endif %}
