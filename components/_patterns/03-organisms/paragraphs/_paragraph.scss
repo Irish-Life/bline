@@ -1,20 +1,24 @@
 
 .paragraph--section {
   @include breakout;
+
   background-color: $gray-lightest;
   padding: $space-double 0 $space-triple 0;
+
+  p {
+    color: $gray-darker;
+  }
 }
 
 .paragraph--section__inner {
   @include wrapper;
+
   text-align: center;
 }
 
 .paragraph--section__heading {
   color: $purple-regular;
 }
-
-
 
 .paragraph--section--green {
   background-color: $green-dark;
@@ -28,7 +32,6 @@
   }
 }
 
-
 .paragraph--section--indigo {
   background-color: $indigo-regular;
 
@@ -40,7 +43,6 @@
     color: white;
   }
 }
-
 
 .paragraph--section--purple {
   background-color: $purple-regular;
@@ -78,8 +80,6 @@
   }
 }
 
-
 .paragraph--section--white {
   background-color: $white;
 }
-
