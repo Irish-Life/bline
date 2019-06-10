@@ -29,6 +29,8 @@ items:
     value: '#2196f3'
   - name: $green-light
     value: '#50c9b5'
+  - name: $salmon-regular
+    value: '#d68a8a'
   - name: $green-dark
     value: '#24847c'
   - name: $orange-yellow

@@ -83,3 +83,11 @@
 .paragraph--section--white {
   background-color: $white;
 }
+
+.paragraph--masthead {
+  @include breakout;
+
+  background-image: linear-gradient(to right, $purple-regular , $salmon-regular);
+  height: 12rem;
+  padding-top: 2em;
+}
