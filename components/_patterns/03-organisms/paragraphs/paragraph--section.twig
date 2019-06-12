@@ -35,8 +35,8 @@
  *
  * @ingroup themeable
  */
-#}
-{% set bgcolor = content.field_background_colour[0]["#markup"] ?: color_class %}
+#}{{ kint(content) }}
+{% set bgcolor = content.field_section_background_colour[0]["#markup"] ?: color_class %}
 {% set bundle = paragraph.bundle ?: base_class %}
 {% set image = content.field_section_image|without("label") %}
 {%
@@ -55,19 +55,19 @@
 
 <div class="paragraph--{{ bundle }}__inner">
 {% if content %}
-  {{ content.field_main_heading }}
-    {% if content.field_sub_heading %}
-      {{ content.field_sub_heading }}
+  {{ content.field_section_heading }}
+    {% if content.field_section_sub_heading %}
+      {{ content.field_section_sub_heading }}
     {% endif %}
     {% if content.field_section_image["#title"] %}
     {% set attributes = attributes.removeClass(classes) %}
       {% include "@base/layouts/grid/00-grid.twig" with {
-        items: [image, content.field_body_text],
+        items: [image, content.field_section_body_text],
         grid_base_class: "grid",
         grid_modifiers: ["columns-2"]
         } %}
     {% else %}
-      {{ content.field_body_text }}
+      {{ content.field_section_body_text }}
     {% endif %}
 {% else %}
   {{ dummy_content|raw }}

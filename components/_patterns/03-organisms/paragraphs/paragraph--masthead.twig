@@ -47,6 +47,14 @@
   set inner = "paragraph--" ~ paragraph.bundle ~ "__inner"|clean_class
 %}
 <div class="{{ inner }}">
+{% set attributes = attributes.removeClass(classes) %}
+{% include "@atoms/04-images/00-image/figure.twig" with {
+        img_src: logo_path ?: '../../images/logo.png',
+        img_alt: img_alt ?: "Logo",
+        img_url: logo_link_url|default('/'),
+        image_figure_base_class: 'logo',
+        image_link_blockname: 'logo',
+  } %}
   {{ content }}
 </div>
 </div>

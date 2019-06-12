@@ -35,11 +35,12 @@
  *
  * @see template_preprocess_field()
  */
+
+ @TODO: THIS CAN BE REMOVED IF BEM CLASSES CAN BE APPLIED IN WYSIWYG
 #}
-{% for item in items %}
-  {% include "@atoms/02-text/00-headings/_heading.twig" with {
-  heading: item.content["#text"],
-  heading_level: 1,
-  heading_base_class: "paragraph--section__heading"
-  } %}
-{% endfor %}
+
+{% include "@atoms/02-text/00-headings/_heading.twig" with {
+  heading: items.0.content["#context"].value|raw,
+  heading_level: 3,
+  heading_base_class: "paragraph--masthead__subheading"
+} %}

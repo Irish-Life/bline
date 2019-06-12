@@ -48,12 +48,9 @@
 
 .paragraph--section--purple {
   background-color: $purple-regular;
+  color: $white;
 
   .paragraph--section__heading {
-    color: $white;
-  }
-
-  p {
     color: $white;
   }
 }
@@ -93,8 +90,15 @@
   @include breakout;
 
   background-image: linear-gradient(to right, $purple-regular , $salmon-regular);
-  height: 12rem;
-  padding-top: 2em;
+  padding: 2em 0;
+
+  h1 {
+    color: $white;
+  }
+
+  figure {
+    width: 6em;
+  }
 }
 
 .paragraph--masthead__inner {

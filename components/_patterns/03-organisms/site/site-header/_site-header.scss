@@ -6,5 +6,10 @@
 
 .site-header {
   // max-width: 100%;
+  padding: 2em 0;
   background-color: none;
+
+  figure {
+    width: 6em;
+  }
 }
