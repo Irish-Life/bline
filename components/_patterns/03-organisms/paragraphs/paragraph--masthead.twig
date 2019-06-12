@@ -36,23 +36,26 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    "paragraph"|clean_class,
-    "paragraph--" ~ paragraph.bundle|clean_class,
+{% set classes = [
+  base_class,
+  paragraph.bundle ? "paragraph--" ~ paragraph.bundle |clean_class : element_class
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-{%
-  set inner = "paragraph--" ~ paragraph.bundle ~ "__inner"|clean_class
-%}
+{% set inner = paragraph.bundle ? "paragraph--" ~ paragraph.bundle ~ "__inner"|clean_class : inner_class %}
+
+{% if attributes %}
+  <div{{ attributes.addClass(classes) }}>
+{% else %}
+  <div class="{{ base_class }} {{ element_class }}">
+{% endif %}
+
 <div class="{{ inner }}">
 {% set attributes = attributes.removeClass(classes) %}
 {% include "@atoms/04-images/00-image/figure.twig" with {
-        img_src: logo_path ?: '../../images/logo.png',
+        img_src: logo_path ?: '../../images/logo.svg',
         img_alt: img_alt ?: "Logo",
         img_url: logo_link_url|default('/'),
-        image_figure_base_class: 'logo',
+        image_figure_base_class: "logo",
         image_link_blockname: 'logo',
   } %}
   {{ content }}
