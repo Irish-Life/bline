@@ -20,28 +20,23 @@
 
 .paragraph--section__heading {
   color: $purple-regular;
+  font-weight: 300;
 }
 
 .paragraph--section--green {
   background-color: $green-dark;
+  color: $white;
 
   .paragraph--section__heading {
-    color: $white;
-  }
-
-  p {
     color: $white;
   }
 }
 
 .paragraph--section--indigo {
   background-color: $indigo-regular;
+  color: $white;
 
   .paragraph--section__heading {
-    color: $white;
-  }
-
-  p {
     color: $white;
   }
 }
@@ -57,24 +52,18 @@
 
 .paragraph--section--blue {
   background-color: $blue-light;
+  color: $white;
 
   .paragraph--section__heading {
-    color: $white;
-  }
-
-  p {
     color: $white;
   }
 }
 
 .paragraph--section--orange {
   background-color: $orange-yellow;
+  color: $white;
 
   .paragraph--section__heading {
-    color: $white;
-  }
-
-  p {
     color: $white;
   }
 }
@@ -92,10 +81,6 @@
   background-image: linear-gradient(to right, $purple-regular , $salmon-regular);
   padding: 2em 0;
 
-  h1 {
-    color: $white;
-  }
-
   figure {
     width: 6em;
   }
@@ -107,7 +92,16 @@
   text-align: center;
 }
 
-.paragraph--masthead__logo {
+.paragraph--masthead__heading {
+  font-weight: 300;
+  color: $white;
+}
 
+.paragraph--masthead__subheading {
+  color: $white;
+  font-weight: 300;
+}
+
+.paragraph--masthead__logo {
 
 }
