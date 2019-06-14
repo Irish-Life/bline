@@ -35,7 +35,7 @@
  *
  * @ingroup themeable
  */
-#}{{ kint(content) }}
+#}
 {% set bgcolor = content.field_section_background_colour[0]["#markup"] ?: color_class %}
 {% set bundle = paragraph.bundle ?: base_class %}
 {% set image = content.field_section_image|without("label") %}

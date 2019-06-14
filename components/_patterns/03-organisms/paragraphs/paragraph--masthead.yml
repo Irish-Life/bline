@@ -3,3 +3,5 @@ element_class: "paragraph--masthead"
 inner_class: "paragraph--masthead__inner"
 dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1><div class='text-long'>Some sub heading text</div>"
 masthead_alt: "Logo"
+
+

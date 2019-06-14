@@ -58,6 +58,11 @@
         image_figure_base_class: "logo",
         image_link_blockname: 'logo',
   } %}
+  {% set menu_items = [ {'title': 'Home', 'url':  '/'}, { 'title': 'About', 'url': '/blah'} ] %}
+
+  {% include "@molecules/menus/page-menu/page-menu.twig" with {
+    items: menu_items
+  } %}
   {{ content }}
 </div>
 </div>
