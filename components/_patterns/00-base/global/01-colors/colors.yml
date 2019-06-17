@@ -35,7 +35,6 @@ items:
     value: '#24847c'
   - name: $orange-yellow
     value: '#f6a737'
-
 meta:
   description: >-
     To add to these items, use Sass variables that start with <code>$</code> in

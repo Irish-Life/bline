@@ -71,37 +71,3 @@
 .paragraph--section--white {
   background-color: $white;
 }
-
-/**
-* Masthead
-*/
-.paragraph--masthead {
-  @include breakout;
-
-  background-image: linear-gradient(to right, $purple-regular , $salmon-regular);
-  padding: 2em 0;
-
-  figure {
-    width: 6em;
-  }
-}
-
-.paragraph--masthead__inner {
-  @include wrapper;
-
-  text-align: center;
-}
-
-.paragraph--masthead__heading {
-  font-weight: 300;
-  color: $white;
-}
-
-.paragraph--masthead__subheading {
-  color: $white;
-  font-weight: 300;
-}
-
-.paragraph--masthead__logo {
-
-}
