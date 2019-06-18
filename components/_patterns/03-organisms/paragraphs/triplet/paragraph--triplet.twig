@@ -36,7 +36,6 @@
  * @ingroup themeable
  */
 #}
-
 {% set bundle = paragraph.bundle ?: base_class %}
 
 {%
@@ -45,7 +44,7 @@
     "paragraph--" ~ bundle|clean_class,
   ]
 %}
-{% if content %}{{kint(content.field_heading_first)}}
+{% if content %}
   {% set first = [content.field_heading_first, content.field_first_body_text, content.field_first_media_item] %}
   {% set second = [content.field_heading_second, content.field_second_body_text, content.field_second_media_item] %}
   {% set third = [content.field_heading_third, content.field_third_body_text, content.field_third_media_item] %}
@@ -55,7 +54,6 @@
   {% set third = dummy_media %}
 {% endif %}
 
-
 {% if attributes %}
   <div{{ attributes.addClass(classes) }}>
 {% else %}
@@ -63,10 +61,30 @@
 {% endif %}
 
 <div class="paragraph--{{ bundle }}__inner">
-{% include "@base/layouts/grid/00-grid.twig" with {
+{% set attributes = attributes.removeClass(classes) %}
+{% embed "@base/layouts/grid/00-grid.twig" with {
         items: [first, second, third],
         grid_base_class: "grid",
         grid_modifiers: ["columns-3"]
+  } %}
+  {% block grid_content %}
+    {% for item in items %}
+      <div class="grid__item">
+        {% include "@atoms/02-text/00-headings/_heading.twig" with {
+          heading: item[0],
+          heading_level: 3,
+          heading_base_class: "paragraph--triplet__heading"
         } %}
+        {% include "@atoms/02-text/text/01-paragraph.twig" with {
+          paragraph_content: item[1]
+        } %}
+
+        {{ item[2] }}
+
+      </div>
+    {% endfor %}
+  {% endblock %}
+
+{% endembed %}
 </div>
 </div>
