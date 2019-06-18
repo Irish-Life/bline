@@ -1,5 +1,6 @@
 .page-menu {
   @include list-reset;
+
   position: fixed;
   top: 94vh;
   left: 0;
@@ -47,5 +48,4 @@
   letter-spacing: 1.5px;
   text-decoration: none;
   text-transform: uppercase;
-
 }

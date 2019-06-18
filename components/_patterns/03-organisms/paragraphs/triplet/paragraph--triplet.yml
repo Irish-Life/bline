@@ -1,0 +1,7 @@
+base_class: "triplet"
+dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1><div class='text-long'>Some sub heading text</div>"
+color_class: "grey"
+dummy_heading: "A Nice Heading"
+dummy_text: "Some text to go along with it."
+dummy_media: "https://via.placeholder.com/150"
+

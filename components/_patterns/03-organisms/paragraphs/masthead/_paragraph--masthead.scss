@@ -5,7 +5,7 @@
 .paragraph--masthead {
   @include breakout;
 
-  background-image: linear-gradient(to right, $purple-regular , $salmon-regular);
+  background-image: linear-gradient(to right, $purple-regular, $salmon-regular);
   padding: 2em 0;
 
   figure {

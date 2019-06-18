@@ -36,37 +36,4 @@
  * @ingroup themeable
  */
 #}
-
-{% set bundle = paragraph.bundle ?: base_class %}
-
-{%
-  set classes = [
-    "paragraph"|clean_class,
-    "paragraph--" ~ bundle|clean_class,
-  ]
-%}
-{% if content %}{{kint(content.field_heading_first)}}
-  {% set first = [content.field_heading_first, content.field_first_body_text, content.field_first_media_item] %}
-  {% set second = [content.field_heading_second, content.field_second_body_text, content.field_second_media_item] %}
-  {% set third = [content.field_heading_third, content.field_third_body_text, content.field_third_media_item] %}
-{% else %}
-  {% set first = dummy_heading %}
-  {% set second = dummy_text %}
-  {% set third = dummy_media %}
-{% endif %}
-
-
-{% if attributes %}
-  <div{{ attributes.addClass(classes) }}>
-{% else %}
-  <div class="{% for class in classes %}{{ class ~ " " }}{% endfor %}">
-{% endif %}
-
-<div class="paragraph--{{ bundle }}__inner">
-{% include "@base/layouts/grid/00-grid.twig" with {
-        items: [first, second, third],
-        grid_base_class: "grid",
-        grid_modifiers: ["columns-3"]
-        } %}
-</div>
-</div>
+{% include "@organisms/paragraphs/triplet/paragraph--triplet.twig" %}

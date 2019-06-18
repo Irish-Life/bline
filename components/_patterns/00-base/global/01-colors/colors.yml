@@ -16,7 +16,7 @@ items:
   - name: $gray-darker
     value: '#333'
   - name: $black
-    value: '#333333'
+    value: '#333'
   - name: $purple-light
     value: '#717fe1'
   - name: $purple-regular
