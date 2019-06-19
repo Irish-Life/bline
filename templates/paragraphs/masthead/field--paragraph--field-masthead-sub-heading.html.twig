@@ -40,7 +40,7 @@
 #}
 
 {% include "@atoms/02-text/00-headings/_heading.twig" with {
-  heading: items.0.content["#context"].value|raw,
+  heading: items.0.content["#text"]|raw,
   heading_level: 3,
   heading_base_class: "paragraph--masthead__subheading"
 } %}
