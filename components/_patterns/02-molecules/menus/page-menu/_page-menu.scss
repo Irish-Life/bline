@@ -8,6 +8,7 @@
   height: 100%;
   background-color: $purple-regular;
   min-height: 2em;
+  grid-area: menu;
 
   @include medium {
     position: static;

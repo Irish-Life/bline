@@ -10,21 +10,30 @@
 
   figure {
     width: 6em;
+    grid-area: logo;
   }
 }
 
 .paragraph--masthead__inner {
   @include wrapper;
-
+  display: grid;
+  grid-template-areas: "
+  logo top top menu"
+  "title title title title"
+  "subtitle subtitle subtitle subtitle";
   text-align: center;
 }
 
 .paragraph--masthead__heading {
   font-weight: 300;
   color: $white;
+  grid-area: title;
+  margin-top: 3rem;
+  line-height: 1.6em;
 }
 
 .paragraph--masthead__subheading {
   color: $white;
   font-weight: 300;
+  grid-area: subtitle;
 }
