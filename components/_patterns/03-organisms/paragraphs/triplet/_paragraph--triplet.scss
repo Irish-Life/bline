@@ -1,3 +1,9 @@
 .paragraph--triplet__cta {
   @include button-cta;
 }
+
+.paragraph--triplet__column {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
