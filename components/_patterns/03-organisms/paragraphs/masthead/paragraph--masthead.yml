@@ -1,7 +1,7 @@
 base_class: "paragraph"
 element_class: "paragraph--masthead"
 inner_class: "paragraph--masthead__inner"
-dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1><div class='text-long'>Some sub heading text</div>"
+dummy_content: "<h1 class='paragraph--masthead__heading'>Lorem Ipsum</h1><h3 class='paragraph--masthead__subheading'>Some sub heading text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</div>"
 masthead_alt: "Logo"
 
 

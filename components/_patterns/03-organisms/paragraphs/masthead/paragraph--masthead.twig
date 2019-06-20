@@ -63,6 +63,6 @@
   {% include "@molecules/menus/page-menu/page-menu.twig" with {
     items: menu_items
   } %}
-  {{ content }}
+  {{ content ?: dummy_content|raw }}
 </div>
 </div>
