@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   background-color: $purple-regular;
+  min-height: 2em;
 
   @include medium {
     position: static;
@@ -18,7 +19,7 @@
 
 .page-menu__item {
   margin: 0 1em 0.5em 0;
-  padding: 1em 0 0 0;
+  padding: 0.5rem 0 0.5rem 0;
   display: inline-block;
 
   @include large {
