@@ -16,11 +16,12 @@
 
 .paragraph--masthead__inner {
   @include wrapper;
+
   display: grid;
-  grid-template-areas: "
-  logo top top menu"
-  "title title title title"
-  "subtitle subtitle subtitle subtitle";
+  grid-template-areas:
+    "logo top top menu"
+    "title title title title"
+    "subtitle subtitle subtitle subtitle";
   text-align: center;
 }
 

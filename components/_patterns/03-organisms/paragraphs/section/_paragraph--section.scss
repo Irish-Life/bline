@@ -23,11 +23,20 @@
   font-weight: 300;
 }
 
+.paragraph--section__subheading {
+  color: $purple-regular;
+  font-weight: 300;
+}
+
 .paragraph--section--green {
   background-color: $green-dark;
   color: $white;
 
   .paragraph--section__heading {
+    color: $white;
+  }
+
+  .paragraph--section__subheading {
     color: $white;
   }
 }
@@ -39,6 +48,10 @@
   .paragraph--section__heading {
     color: $white;
   }
+
+  .paragraph--section__subheading {
+    color: $white;
+  }
 }
 
 .paragraph--section--purple {
@@ -46,6 +59,10 @@
   color: $white;
 
   .paragraph--section__heading {
+    color: $white;
+  }
+
+  .paragraph--section__subheading {
     color: $white;
   }
 }
@@ -57,6 +74,10 @@
   .paragraph--section__heading {
     color: $white;
   }
+
+  .paragraph--section__subheading {
+    color: $white;
+  }
 }
 
 .paragraph--section--orange {
@@ -64,6 +85,10 @@
   color: $white;
 
   .paragraph--section__heading {
+    color: $white;
+  }
+
+  .paragraph--section__subheading {
     color: $white;
   }
 }

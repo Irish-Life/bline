@@ -3,6 +3,6 @@ dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1><div cla
 color_class: "grey"
 dummy_heading: "A Nice Heading"
 dummy_text: "Some text to go along with it."
-dummy_media: "<img src='https://via.placeholder.com/600' width='600' height='600' />"
+dummy_media: "<img src='https://via.placeholder.com/300' width='300' height='300' alt='Placeholder' />"
 
 
