@@ -49,3 +49,10 @@ body {
     @extend .hr;
   }
 }
+
+.text-columns__3 {
+  columns: 3 auto;
+  column-gap: 3em;
+  text-align: left;
+  hyphens: auto;
+}
