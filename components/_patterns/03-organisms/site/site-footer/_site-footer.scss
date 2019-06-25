@@ -1,8 +1,7 @@
 .footer {
   @include breakout;
 
+  height: 12em;
   clear: both;
   background-color: $brown-regular;
-  height: 100%;
-  width: 100%;
 }
