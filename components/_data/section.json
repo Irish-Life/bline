@@ -1,0 +1,28 @@
+{
+    "sections" : {
+      "section1": {
+        "base_class" : "section",
+        "dummy_content" : "<h1 class='paragraph--section__heading'>The First Section Header is Great</h1><div class='text-long'>Sea of Tranquility tendrils of gossamer clouds the carbon in our apple pies Jean-François Champollion tesseract extraordinary claims require extraordinary evidence. With pretty stories for which there's little good evidence great turbulent clouds intelligent beings star stuff harvesting star light venture Apollonius of Perga. Shores of the cosmic ocean as a patch of light inconspicuous motes of rock and gas Drake Equation something incredible is waiting to be known as a patch of light and billions upon billions upon billions upon billions upon billions upon billions upon billions.t</div>",
+        "color_class" : "white"
+      },
+
+      "section2" : {
+        "base_class" : "section",
+        "dummy_content" : "<h1 class='paragraph--section__heading'>A Big Bad Section Right Here</h1><div class='grid grid--columns-2'><div class='grid__item'><div><article><a href='https://pages.bline.ie/sites/default/files/2019-06/butterfly.jpg'><img src='http://pages.bline.ie/sites/default/files/2019-06/butterfly.jpg' width='1000' height='560' alt='A butterfly' typeof='foaf:Image'></a></article></div></div><div class='grid__item'><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat sem at mauris suscipit porta. Cras metus velit, elementum sed pellentesque a, pharetra eu eros. Etiam facilisis placerat euismod. Nam faucibus neque arcu, quis accumsan leo tincidunt varius. In vel diam enim. Sed id ultrices ligula. Maecenas at urna arcu. Sed.</div></div></div>",
+        "color_class" : "grey",
+        "image" : "../images/sky.jpg"
+      },
+
+      "section3" : {
+        "base_class" : "section",
+        "dummy_content" : "<h1 class='paragraph--section__heading'>Section Heading the Third</h1><div class='text-long'>Take root and flourish Apollonius of Perga encyclopaedia galactica bits of moving fluff galaxies something incredible is waiting to be known. Hearts of the stars hearts of the stars brain is the seed of intelligence Orion's sword emerged into consciousness vanquish the impossible. Muse about network of wormholes not a sunrise but a galaxyrise muse about laws of physics kindling the energy hidden in matter. The carbon in our apple pies preserve and cherish that pale blue dot extraordinary claims require extraordinary evidence network of wormholes descended from astronomers descended from astronomers. At the edge of forever culture Tunguska event inconspicuous motes of rock and gas courage of our questions something incredible is waiting to be known? Birth the ash of stellar alchemy across the centuries birth star stuff harvesting star light corpus callosum. Vastness is bearable only through love concept of the number one bits of moving fluff muse about encyclopaedia galactica Sea of Tranquility. Made in the interiors of collapsing stars dream of the mind's eye invent the universe astonishment gathered by gravity the only home we've ever known and billions upon billions upon billions upon billions upon billions upon billions upon billions.</div>",
+        "color_class" : "purple"
+      },
+
+      "section4" : {
+        "base_class" : "section",
+        "dummy_content" : "<h1 class='paragraph--section__heading'>The Final Front Tier</h1><div class='text-long'>Network of wormholes Neque porro quisquam est citizens of distant epochs Apollonius of Perga take root and flourish brain is the seed of intelligence. Made in the interiors of collapsing stars sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem nisi ut aliquid ex ea commodi consequatur at the edge of forever great turbulent clouds realm of the galaxies. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium across the centuries Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur Sea of Tranquility birth not a sunrise but a galaxyrise and billions upon billions upon billions upon billions upon billions upon billions upon billions.</div>",
+        "color_class" : "white"
+      }
+    }
+}

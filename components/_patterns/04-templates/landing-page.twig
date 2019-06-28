@@ -1,0 +1,30 @@
+{% embed "@templates/_default.twig" with {
+  menu_items: header.templates.menu_items,
+  footer_menu_items: footer.templates.menu_items,
+} %}
+
+{% block page_header %}
+  {% include "@organisms/paragraphs/masthead/paragraph--masthead.twig" with {
+    base_class: "paragraph",
+    element_class: "paragraph--masthead",
+    inner_class: "paragraph--masthead__inner",
+    dummy_content: "<h1 class='paragraph--masthead__heading'>Lorem Ipsum</h1><h3 class='paragraph--masthead__subheading'>Some sub heading text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</div>"
+  } %}
+{% endblock %}
+
+  {% block page_content %}
+    {% include "@templates/_place-holder.twig" with {
+      "place_holder": "Section 1",
+    } %}
+    {% include "@templates/_place-holder.twig" with {
+      "place_holder": "Section 2",
+    } %}
+    {% include "@templates/_place-holder.twig" with {
+      "place_holder": "Section 3",
+    } %}
+    {% include "@templates/_place-holder.twig" with {
+      "place_holder": "Section 4",
+    } %}
+  {% endblock %}
+
+{% endembed %}

@@ -1,0 +1,38 @@
+{% embed "@templates/_default.twig" with {
+  menu_items: header.templates.menu_items,
+  footer_menu_items: footer.templates.menu_items,
+} %}
+
+{% block page_header %}
+  {% include "@organisms/paragraphs/masthead/paragraph--masthead.twig" with {
+    base_class: "paragraph",
+    element_class: "paragraph--masthead",
+    inner_class: "paragraph--masthead__inner",
+    dummy_content: "<h1 class='paragraph--masthead__heading'>Lorem Ipsum</h1><h3 class='paragraph--masthead__subheading'>Some sub heading text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</div>"
+  } %}
+{% endblock %}
+
+  {% block page_content %}
+    {% include "@organisms/paragraphs/section/paragraph--section.twig" with {
+      base_class: sections.section1.base_class,
+      dummy_content: sections.section1.dummy_content,
+      color_class: sections.section1.color_class
+    } %}
+    {% include "@organisms/paragraphs/section/paragraph--section.twig" with {
+      base_class: sections.section2.base_class,
+      dummy_content: sections.section2.dummy_content,
+      color_class: sections.section2.color_class,
+      image: sections.section2.image
+    } %}{% include "@organisms/paragraphs/section/paragraph--section.twig" with {
+      base_class: sections.section3.base_class,
+      dummy_content: sections.section3.dummy_content,
+      color_class: sections.section3.color_class
+    } %}{% include "@organisms/paragraphs/section/paragraph--section.twig" with {
+      base_class: sections.section4.base_class,
+      dummy_content: sections.section4.dummy_content,
+      color_class: sections.section4.color_class
+    } %}
+
+  {% endblock %}
+
+{% endembed %}
