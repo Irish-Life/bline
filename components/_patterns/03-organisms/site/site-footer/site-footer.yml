@@ -1,5 +1,9 @@
 footer_menu_items:
-  - title: "Test"
+  - title: "First"
     url: "/"
-  - title: "Number 2"
+  - title: "Second"
     url: "/test-2"
+  - title: "Third"
+    url: "/test-3"
+  - title: "Fourth"
+    url: "/test-4"

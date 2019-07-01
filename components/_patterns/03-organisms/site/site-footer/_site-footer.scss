@@ -10,3 +10,8 @@
   @include wrapper;
 
 }
+
+.site-footer .page-menu {
+  display: flex;
+  flex-flow: column nowrap;
+}
