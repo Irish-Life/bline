@@ -1,7 +1,12 @@
-.site-footer {
+.site-footer__container {
   @include breakout;
 
   height: 12em;
   clear: both;
   background-color: $brown-regular;
+}
+
+.site-footer {
+  @include wrapper;
+
 }
