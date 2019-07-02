@@ -1,7 +1,7 @@
 <div class="site-footer__container">
   <footer class="site-footer">
     {% block footer_content %}
-      {% include "@molecules/menus/page-menu/page-menu.twig" with {
+      {% include "@molecules/menus/footer-menu/footer-menu.twig" with {
         items: items ?: footer_menu_items
       } %}
     {% endblock %}

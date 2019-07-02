@@ -1,4 +1,4 @@
-.page-menu {
+.footer-menu {
   @include list-reset;
 
   position: fixed;
@@ -17,7 +17,7 @@
   }
 }
 
-.page-menu__item {
+.footer-menu__item {
   margin: 0 1em 0.5em 0;
   padding: 0.5rem 0 0.5rem 0;
   display: inline-block;
@@ -36,10 +36,10 @@
   }
 }
 
-.page-menu__link {
+.footer-menu__link {
   @include link;
 
-  color: $white;
+  color: $gray-light;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -47,7 +47,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $white;
     border-bottom: 2px solid $blue-light;
+    color: $white;
   }
 }

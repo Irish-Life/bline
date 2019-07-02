@@ -1,17 +1,12 @@
 .site-footer__container {
   @include breakout;
 
-  height: 12em;
+  padding-top: 2em;
+  height: 16em;
   clear: both;
   background-color: $brown-regular;
 }
 
 .site-footer {
   @include wrapper;
-
-}
-
-.site-footer .page-menu {
-  display: flex;
-  flex-flow: column nowrap;
 }
