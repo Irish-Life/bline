@@ -2,11 +2,20 @@
   @include breakout;
 
   padding-top: 2em;
-  height: 16em;
+  height: 100%;
   clear: both;
   background-color: $brown-regular;
+
+  @include medium {
+    height: 16em;
+  }
+
 }
 
 .site-footer {
   @include wrapper;
+
+  p {
+    color: $gray-lighter;
+  }
 }

@@ -43,14 +43,14 @@
 
 .paragraph--section--indigo {
   background-color: $indigo-regular;
-  color: $white;
+  color: $green-light;
 
   .paragraph--section__heading {
-    color: $white;
+    color: $green-light;
   }
 
   .paragraph--section__subheading {
-    color: $white;
+    color: $green-light;
   }
 }
 
@@ -69,27 +69,27 @@
 
 .paragraph--section--blue {
   background-color: $blue-light;
-  color: $white;
+  color: $black;
 
   .paragraph--section__heading {
-    color: $white;
+    color: $black;
   }
 
   .paragraph--section__subheading {
-    color: $white;
+    color: $black;
   }
 }
 
 .paragraph--section--orange {
   background-color: $orange-yellow;
-  color: $white;
+  color: $indigo-regular;
 
   .paragraph--section__heading {
-    color: $white;
+    color: $indigo-regular;
   }
 
   .paragraph--section__subheading {
-    color: $white;
+    color: $indigo-regular;
   }
 }
 
