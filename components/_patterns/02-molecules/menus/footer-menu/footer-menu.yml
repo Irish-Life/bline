@@ -3,3 +3,7 @@ items:
     url: "/"
   - title: "Number 2"
     url: "/test-2"
+  - title: "number 3"
+    url: "//test-3"
+  - title: "Number 4"
+    url: "/test-4"

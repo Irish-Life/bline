@@ -9,6 +9,7 @@
   min-height: 2em;
   grid-area: menu;
   background-color: $purple-regular;
+  z-index: 9999;
 
   @include medium {
     position: static;
