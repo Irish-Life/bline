@@ -5,8 +5,9 @@
 }
 
 @mixin body-copy {
+  text-align: left;
   font-family: $font-body;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   line-height: 1.6em;
   font-weight: 300;
 }

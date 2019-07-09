@@ -26,11 +26,10 @@
 }
 
 .paragraph--masthead__heading {
-  font-weight: 300;
+  @include heading-xl;
+
   color: $white;
   grid-area: title;
-  margin-top: 3rem;
-  line-height: 1.6em;
 }
 
 .paragraph--masthead__subheading {

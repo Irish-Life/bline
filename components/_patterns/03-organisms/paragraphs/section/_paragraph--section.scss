@@ -8,6 +8,8 @@
   padding: $space-double 0 $space-triple 0;
 
   p {
+    @include body-copy;
+
     color: $gray-darker;
   }
 }
@@ -19,6 +21,8 @@
 }
 
 .paragraph--section__heading {
+  @include heading-xl;
+
   color: $purple-regular;
   font-weight: 300;
 }
