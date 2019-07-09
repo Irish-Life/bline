@@ -26,14 +26,17 @@
 }
 
 .paragraph--masthead__heading {
-  @include heading-xl;
+  @include heading-xl();
 
+  font-weight: 300;
   color: $white;
   grid-area: title;
 }
 
 .paragraph--masthead__subheading {
-  color: $white;
+  @include heading-small();
+
   font-weight: 300;
+  color: $white;
   grid-area: subtitle;
 }

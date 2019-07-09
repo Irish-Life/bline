@@ -21,13 +21,15 @@
 }
 
 .paragraph--section__heading {
-  @include heading-xl;
+  @include heading-xl();
 
   color: $purple-regular;
   font-weight: 300;
 }
 
 .paragraph--section__subheading {
+  @include heading-small();
+
   color: $purple-regular;
   font-weight: 300;
 }

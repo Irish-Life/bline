@@ -39,7 +39,7 @@
 {% for item in items %}
   {% include "@atoms/02-text/00-headings/_heading.twig" with {
   heading: item.content["#text"]|raw,
-  heading_level: 2,
-  heading_base_class: "h2 paragraph--section__subheading"
+  heading_level: 3,
+  heading_base_class: "h3 paragraph--section__subheading"
   } %}
 {% endfor %}
