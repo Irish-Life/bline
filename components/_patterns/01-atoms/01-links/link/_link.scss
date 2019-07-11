@@ -1,9 +1,10 @@
 /// Link
-$color-link: $gray-darker;
-$color-link--hover: $gray-light;
+$color-link: $blue-light;
+$color-link--hover: $purple-regular;
 
 @mixin link {
   color: $color-link;
+  font-weight: 400;
 
   &:hover {
     color: $color-link--hover;
