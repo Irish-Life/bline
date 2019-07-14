@@ -13,7 +13,6 @@ $color-heading: $gray-darker;
   font-size: #{$font-size};
   line-height: #{$line-height};
   margin: #{$margin};
-  letter-spacing: -2px;
   width: auto;
 
   &__link {
@@ -33,7 +32,6 @@ $color-heading: $gray-darker;
   font-size: #{$font-size};
   line-height: #{$line-height};
   margin: #{$margin};
-  letter-spacing: -1px;
   width: auto;
 
   &__link {
