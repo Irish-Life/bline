@@ -1,8 +1,8 @@
 base_class: "section"
 dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1>
-<div class='text-long'>Some sub heading text. Lorem
+<div class='text-long'><p>Some sub heading text. Lorem
 ipsum dolor sit amet, consectetur adipiscing elit.
  Quisque sapien velit, aliquet eget commodo nec,
  auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus.
- Curabitur quis varius libero.</div>"
+ Curabitur quis varius libero.</p></div>"
 color_class: "green"

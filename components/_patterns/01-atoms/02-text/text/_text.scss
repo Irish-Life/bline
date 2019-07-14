@@ -7,7 +7,7 @@
 @mixin body-copy {
   text-align: left;
   font-family: $font-body;
-  font-size: 1.125rem;
+  font-size: 1em;
   line-height: 1.6em;
   font-weight: 300;
 }
@@ -40,6 +40,7 @@ body {
 .text-long {
   p {
     @extend .paragraph;
+    @extend body;
   }
 
   blockquote {

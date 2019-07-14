@@ -1,4 +1,4 @@
 base_class: "section"
-dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1><div class='text-long'>Some sub heading text</div>"
+dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1><div class='text-long'><p>Some sub heading text</p></div>"
 color_class: "grey"
 dummy_image: "../../../images/sky.jpg"

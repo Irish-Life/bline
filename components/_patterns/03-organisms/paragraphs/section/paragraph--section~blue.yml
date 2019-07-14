@@ -1,8 +1,8 @@
 base_class: "section"
 dummy_content: "<h1 class='paragraph--section__heading'>Lorem Ipsum</h1>
-<h2 class='h2 paragraph--section__subheading'>This is the subheading
+<h2 class='paragraph--section__subheading'>This is the subheading
 . It's supposed to complement the main heading.</h2><div class='text-long'>
-Some sub heading text.  Lorem ipsum dolor sit amet,
+<p>Some sub heading text.  Lorem ipsum dolor sit amet,
  consectetur adipiscing elit. Aliquam placerat sem at
  mauris suscipit porta. Cras metus velit, elementum sed
  pellentesque a, pharetra eu eros. Etiam facilisis placerat
@@ -21,5 +21,5 @@ Some sub heading text.  Lorem ipsum dolor sit amet,
   Proin efficitur, nisi vel finibus elementum, orci sem volutpat
   eros, eget ultrices velit mi sagittis massa. Vestibulum sagittis
   ullamcorper cursus. Ut turpis dolor, tempor ut tellus et, sodales
-  ultricies elit.</div>"
+  ultricies elit.</p></div>"
 color_class: "blue"

@@ -6,7 +6,7 @@
   @include breakout;
 
   background-image: linear-gradient(to right, $purple-regular, $salmon-regular);
-  padding: 2em 0;
+  padding: $space 0;
 
   figure {
     width: 6em;
@@ -26,17 +26,13 @@
 }
 
 .paragraph--masthead__heading {
-  @include heading-xl();
+  @include heading-xl($color: $white);
 
-  font-weight: 300;
-  color: $white;
   grid-area: title;
 }
 
 .paragraph--masthead__subheading {
-  @include heading-small();
+  @include heading-small($color: $white);
 
-  font-weight: 300;
-  color: $white;
   grid-area: subtitle;
 }
