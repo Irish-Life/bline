@@ -1,6 +1,21 @@
+
 html {
-  font-size: 16px;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
   box-sizing: border-box;
+}
+
+img {
+  margin: 0;
+}
+
+@media(min-width: $medium) {
+  $base-font-size: 20px;
+  $base-line-height: 1.5;
+  html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
 }
 
 *,
