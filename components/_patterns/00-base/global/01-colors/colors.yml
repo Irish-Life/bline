@@ -13,8 +13,6 @@ items:
     value: '#606060'
   - name: $gray-dark
     value: '#4c4c4c'
-  - name: $gray-darker
-    value: '#333'
   - name: $black
     value: '#333'
   - name: $purple-light
