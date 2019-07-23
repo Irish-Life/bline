@@ -57,7 +57,7 @@
 {% if content %}
   {{ content.field_section_heading }}
     {% if content.field_section_sub_heading %}
-      {{ content.field_section_sub_heading }}
+      {{ content.field_section_sub_heading|raw }}
     {% endif %}
     {% if content.field_section_image["#title"] %}
     {% set attributes = attributes.removeClass(classes) %}

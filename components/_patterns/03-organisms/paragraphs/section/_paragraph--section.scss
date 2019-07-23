@@ -5,14 +5,11 @@
   @include breakout;
 
   background-color: $gray-lightest;
-  padding: 0 0 $space-triple 0;
-
+  padding: $space-triple 0 $space-triple 0;
 }
 
 .paragraph--section__inner {
   @include wrapper;
-
-  text-align: center;
 }
 
 .paragraph--section__heading {
@@ -60,7 +57,13 @@
   .paragraph--section__subheading {
     color: $white;
   }
+
+  p {
+    color: $white;
+  }
+
 }
+
 
 .paragraph--section--blue {
   background-color: $blue-light;
@@ -90,4 +93,11 @@
 
 .paragraph--section--white {
   background-color: $white;
+}
+
+@media(max-width: $medium) {
+
+  .paragraph--section__heading {
+    margin-top: $space-quadruple;
+  }
 }

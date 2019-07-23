@@ -35,3 +35,9 @@
 
   grid-area: subtitle;
 }
+
+.paragraph--masthead__button {
+  @extend .button;
+
+  grid-area: menu;
+}
