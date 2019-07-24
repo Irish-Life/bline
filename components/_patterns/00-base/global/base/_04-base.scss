@@ -9,6 +9,14 @@ img {
   margin: 0;
 }
 
+// IE Specific media query. Used to target IE10+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .logo__img {
+    width: 200px;
+    height: auto;
+  }
+}
+
 @media (min-width: $medium) {
   $base-font-size: 20px;
   $base-line-height: 1.5;
