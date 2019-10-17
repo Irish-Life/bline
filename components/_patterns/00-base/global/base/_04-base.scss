@@ -34,7 +34,7 @@ img {
 }
 
 .main {
-  @include wrapper;
+  // @include wrapper;
 
   display: block; // Fix for IE weirdness
 }

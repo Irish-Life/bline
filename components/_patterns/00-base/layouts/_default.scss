@@ -2,13 +2,13 @@
 // General Layout
 //
 
-$sidebar-width: 33%;
+$sidebar-width: 20%;
 $gutter: $space;
 $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 
 .header,
 .main {
-  @include wrapper;
+  // @include wrapper;
 }
 
 //
@@ -26,7 +26,6 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
   margin-bottom: $space-double;
 
   @include large {
-    order: 2;
     width: $sidebar-width;
     margin-bottom: 0;
   }
