@@ -1,6 +1,7 @@
 .site-footer__container {
-  @include breakout;
+  // @include breakout;
 
+  grid-area: footer;
   padding-top: 2em;
   margin-top: $space-sextuple;
   height: 100%;
