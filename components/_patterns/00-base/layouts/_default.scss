@@ -38,6 +38,7 @@ $main-width: 100%;
 
 .main-sidebar {
   grid-area: sidebar;
+  padding: $space;
   margin-bottom: $space-double;
 
   @include large {
@@ -52,6 +53,7 @@ $main-width: 100%;
   @include large {
     &--with-sidebar {
       margin-right: $gutter;
+      margin-left: $gutter;
       width: $main-width;
     }
   }
