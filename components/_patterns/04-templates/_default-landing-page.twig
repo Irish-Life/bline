@@ -11,7 +11,7 @@
   {% set main_content_modifiers = main_content_modifiers|merge(['with-sidebar']) %}
 {% endif %}
 
-<div {{ bem('layout-container', (layout_modifiers)) }}>
+<div {{ bem('layout-landing-page', (layout_modifiers)) }}>
   {% block page_header %}
     {% include "@organisms/site/site-header/site-header.twig" %}
   {% endblock %}

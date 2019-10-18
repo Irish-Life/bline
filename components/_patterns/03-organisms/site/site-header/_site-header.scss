@@ -1,12 +1,14 @@
 //  Empty
 .site-header__container {
-  @include breakout;
-
-  background-image: linear-gradient(135deg, rgba(82, 97, 172, 0.79) 0%, rgba(80, 201, 181, 0.79) 100%);
+  // @include breakout;
+  grid-area: header;
+  border-bottom: 1px solid $gray-lightest;
+  background-color: $near-white;
+  box-shadow: 0 5px 2px -2px rgba(62, 60, 98, 0.08);
+  // background-image: linear-gradient(135deg, rgba(82, 97, 172, 0.79) 0%, rgba(80, 201, 181, 0.79) 100%);
 }
 
 .site-header {
-  margin-bottom: $space-double;
-  padding: 2em 0;
+  padding: $space-one-half $space;
   background-color: none;
 }
