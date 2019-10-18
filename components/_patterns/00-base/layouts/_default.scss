@@ -41,6 +41,10 @@ $main-width: 100%;
   padding: $space;
   margin-bottom: $space-double;
 
+  div {
+    position: fixed;
+  }
+
   @include large {
     width: $sidebar-width;
     margin-bottom: 0;
