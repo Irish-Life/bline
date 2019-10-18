@@ -20,7 +20,7 @@ $main-width: 100%;
 .layout-container {
   display: grid;
   align-items: stretch;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 15% 85%;
   grid-template-rows: 3.5rem 4fr 1fr;
   grid-template-areas:
   "sidebar header"
@@ -30,6 +30,7 @@ $main-width: 100%;
 
 .main {
   grid-area: main;
+  background-color: $near-white;
 
   @include large {
     display: flex;
