@@ -18,6 +18,9 @@ $main-width: 100%;
 //
 
 .layout-container {
+  display: -ms-grid;
+  -ms-grid-columns: 15% 85%;
+  -ms-grid-rows: 3.5rem 4fr 1fr;
   display: grid;
   align-items: stretch;
   grid-template-columns: 15% 85%;
