@@ -1,3 +1,7 @@
+.paragraph--triplet {
+  @include wrapper;
+}
+
 .paragraph--triplet__cta {
   @include button-cta;
 

@@ -34,7 +34,12 @@ img {
 }
 
 .main {
-  @include wrapper;
+  //@include wrapper;
 
   display: block; // Fix for IE weirdness
+}
+
+
+.main-sidebar {
+  background-color: $purple-dark;
 }
