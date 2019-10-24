@@ -47,7 +47,7 @@
 {% if content %}
   {% set first = [content.field_heading_first, content.field_first_body_text, content.field_first_media_item, content.field_first_cta_button] %}
   {% set second = [content.field_heading_second, content.field_second_body_text, content.field_second_media_item, content.field_second_cta_button] %}
-  {% set third = [content.field_heading_third, content.field_third_body_text, content.field_third_media_item, content_third_cta_button] %}
+  {% set third = [content.field_heading_third, content.field_third_body_text, content.field_third_media_item, content.field_third_cta_button] %}
 {% else %}
   {% set first = dummy_heading %}
   {% set second = dummy_text %}
@@ -73,20 +73,21 @@
         {% include "@atoms/02-text/00-headings/_heading.twig" with {
           heading: item[0] ?: dummy_heading,
           heading_level: 2,
-          heading_base_class: "paragraph--triplet__heading"
+          heading_base_class: "h3"
         } %}
         {% include "@atoms/02-text/text/01-paragraph.twig" with {
           paragraph_content: item[1] ?: dummy_text
         } %}
 
         {{ item[2] ?: dummy_media|raw }}
-
-
-        {% include "@atoms/01-links/link/link.twig" with {
-            link_base_class: "paragraph--triplet__cta",
-            link_url: "https://www.google.com",
-            link_content: "Link"
-        } %}
+        {{ kint(item[3][0]) }}
+        {% if item[3][0] %}
+          {% include "@atoms/01-links/link/link.twig" with {
+              link_base_class: "paragraph--triplet__cta",
+              link_url: item[3][0]["#url"],
+              link_content: item[3][0]["#title"]
+          } %}
+        {% endif %}
       </div>
     {% endfor %}
   {% endblock %}

@@ -1,11 +1,13 @@
 .paragraph--triplet {
   @include wrapper;
+
+  margin-top: $space-double;
 }
 
 .paragraph--triplet__cta {
   @include button-cta;
 
-  margin-top: 1em;
+  margin-top: $space;
 }
 
 .paragraph--triplet__column {
