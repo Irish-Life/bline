@@ -18,25 +18,39 @@ $main-width: 100%;
 //
 
 .layout-container {
+  display: -ms-grid;
+  -ms-grid-columns: 15% 85%;
   display: grid;
-  align-items: stretch;
-  grid-template-columns: 1fr 4fr;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-grid-columns: 15% 85%;
+  grid-template-columns: 15% 85%;
+  -ms-grid-rows: 3.5rem 4fr 1fr;
   grid-template-rows: 3.5rem 4fr 1fr;
-  grid-template-areas:
+      grid-template-areas:
   "sidebar header"
   "sidebar main"
   "sidebar footer";
 }
 
 .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: main;
+  background-color: $near-white;
 
   @include large {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
 
 .main-sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   grid-area: sidebar;
   padding: $space;
   margin-bottom: $space-double;
