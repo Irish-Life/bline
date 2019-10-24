@@ -80,7 +80,7 @@
         } %}
 
         {{ item[2] ?: dummy_media|raw }}
-        {{ kint(item[3][0]) }}
+
         {% if item[3][0] %}
           {% include "@atoms/01-links/link/link.twig" with {
               link_base_class: "paragraph--triplet__cta",
