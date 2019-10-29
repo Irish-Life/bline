@@ -85,20 +85,24 @@ $main-width: 100%;
 * Media query for mobile layout
 */
 
-@media (max-width: 400px) {
-  .site-container {
+@media (max-width: $small) {
+  .layout-container {
     width: 100%;
-    border: 6px solid grey;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
-      "header"
-      "main"
-      "sidebar"
-      "footer"
+    -ms-grid-rows: 3.5rem 4fr 3.5rem 1fr;
+    grid-template-rows: 3.5rem 4fr 3.5rem 1fr;
+
+      grid-template-areas:
+    "sidebar"
+    "main"
+    "header"
+    "footer"
   }
 
-  .site-header {
-    width: 100%;
+
+  .main-sidebar {
+    margin-bottom: 0;
   }
 }
 
