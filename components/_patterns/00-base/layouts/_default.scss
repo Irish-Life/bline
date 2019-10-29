@@ -80,6 +80,28 @@ $main-width: 100%;
   }
 }
 
+/*
+*
+* Media query for mobile layout
+*/
+
+@media (max-width: 400px) {
+  .site-container {
+    width: 100%;
+    border: 6px solid grey;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer"
+  }
+
+  .site-header {
+    width: 100%;
+  }
+}
+
 //
 // Layout Using CSS Grid (NO IE11 support)
 // Remove Flexbox code above and uncomment this section to use CSS Grid.
