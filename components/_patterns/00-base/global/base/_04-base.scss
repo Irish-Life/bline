@@ -3,6 +3,12 @@ html {
   font-size: $base-font-size;
   line-height: $base-line-height;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Fix for mobile menu x overflow causing horizontal scrolling */
+body {
+  overflow-x: hidden;
 }
 
 img {

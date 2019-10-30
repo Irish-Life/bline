@@ -1,9 +1,6 @@
 .page-menu {
   @include list-reset;
 
-  // position: fixed;
-  // top: 94vh;
-  // left: 0;
   width: 100%;
   height: 100%;
   min-height: 2em;
@@ -21,9 +18,17 @@
 .page-menu--vertical {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  position: fixed;
+  top: calc(100vh - 3.5rem);
+  left: 0;
+  overflow-x: scroll;
+  width: 100%;
+  padding: $space-one-half;
 
   @include large {
+    overflow-x: initial;;
+    position: static;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -31,13 +36,14 @@
   }
 }
 
+
 .page-menu--pl {
   background: $gray-lighter;
 }
 
 .page-menu__item {
   margin: 0 1em 0.5em 0;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.5em 3em;
   display: inline-block;
 
   @include large {
