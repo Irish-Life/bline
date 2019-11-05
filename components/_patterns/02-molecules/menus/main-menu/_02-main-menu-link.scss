@@ -1,6 +1,6 @@
 // A
 .main-menu__link {
-  color: $white;
+  color: $blue-light;
   display: block;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -17,7 +17,7 @@
     // color: $gray-dark;
     display: inline-block;
     font-size: 1.1rem;
-    padding: $space $space-double $space $space;
+    padding: $space-one-half $space-double $space $space;
     text-transform: none;
     position: relative;
     width: auto;
@@ -39,7 +39,7 @@
     }
 
     &:hover {
-      color: $white;
+      color: $purple-light;
 
       &::after {
         color: $gray-light;
