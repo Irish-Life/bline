@@ -7,3 +7,4 @@ items:
     url: "/"
   - title: "Menu Item 4"
     url: "/"
+menu_modifiers: ["pl"]
