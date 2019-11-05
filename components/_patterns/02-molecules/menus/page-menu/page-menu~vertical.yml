@@ -8,4 +8,4 @@ items:
   - title: "Menu Item 4"
     url: "/"
 
-menu_modifiers: ["vertical"]
+menu_modifiers: ["vertical", "pl"]

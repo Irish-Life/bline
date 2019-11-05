@@ -14,3 +14,9 @@
   padding: $space-one-half $space;
   background-color: none;
 }
+
+@media (max-width: $small) {
+  .site-header {
+    width: 100%;
+  }
+}
