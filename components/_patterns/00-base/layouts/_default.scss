@@ -26,13 +26,13 @@ $main-width: 100%;
   width: 100%;
   -ms-grid-columns: 100%;
   grid-template-columns: 100%;
-  -ms-grid-rows: 3.5rem 4fr 3.5rem 1fr;
-  grid-template-rows: 3.5rem 4fr 3.5rem 1fr;
+  -ms-grid-rows: 3.5rem 3.5rem 4fr 1fr;
+  grid-template-rows: 3.5rem 3.5rem 4fr 1fr;
 
     grid-template-areas:
+  "header"
   "sidebar"
   "main"
-  "header"
   "footer";
 
   @include large {

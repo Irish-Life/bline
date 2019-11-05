@@ -27,7 +27,7 @@
   padding: $space-one-half;
 
   @include large {
-    overflow-x: initial;;
+    overflow-x: hidden;
     position: static;
     display: flex;
     flex-flow: column nowrap;
