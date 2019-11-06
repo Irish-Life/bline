@@ -16,3 +16,14 @@ figure {
 .figure__caption {
   font-style: italic;
 }
+
+.logo__img {
+  margin-top: $space-one-half;
+  margin-left: $space-one-half;
+  margin-right: $space-one-half;
+  width: 5rem;
+
+  @include large() {
+    width: calc(3rem + 5vw);
+  }
+}
