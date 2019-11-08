@@ -1,0 +1,13 @@
+.block__recent-docs-list {
+  background-color: $white;
+  border: 1px solid $gray-dark;
+  padding: $space;
+}
+
+.recent-docs-list {
+  list-style-type: none;
+}
+
+.recent-docs-list__title {
+  @include heading-small($color: $gray-dark);
+}
