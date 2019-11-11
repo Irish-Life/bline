@@ -29,9 +29,11 @@
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes.addClass('recent-docs-list__title') }}>{{ label }}</h2>
+    {% else %}
+      <h2 class="recent-docs-list__title">{{ pl_label }}</h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
+    {{ content ?: dummy_content|raw }}
   {% endblock %}
 </div>
