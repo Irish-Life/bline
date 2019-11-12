@@ -18,8 +18,6 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-{% set img_path =  base_path ~ directory %}
 {% include "@molecules/menus/user-menu/user-menu.twig" with {
-  items: items,
-  img_path: img_path
+  items: items
 } %}

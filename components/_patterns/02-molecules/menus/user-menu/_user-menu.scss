@@ -1,5 +1,12 @@
+.user-menu {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .user-menu__img {
-  background: no-repeat url("images/avatar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-size: 2.5rem;
   width: 2.5rem;
   height: 2.5rem;
