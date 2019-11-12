@@ -61,9 +61,7 @@
   p {
     color: $white;
   }
-
 }
-
 
 .paragraph--section--blue {
   background-color: $blue-light;
@@ -95,8 +93,7 @@
   background-color: $white;
 }
 
-@media(max-width: $medium) {
-
+@media (max-width: $medium) {
   .paragraph--section__heading {
     margin-top: $space-quadruple;
   }

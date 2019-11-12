@@ -21,15 +21,14 @@ $main-width: 100%;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   width: 100%;
   -ms-grid-columns: 100%;
   grid-template-columns: 100%;
   -ms-grid-rows: 3.5rem 4rem 4fr 1fr;
   grid-template-rows: 3.5rem 4rem 4fr 1fr;
-
-    grid-template-areas:
+  grid-template-areas:
     "sidebar"
     "header"
     "main"
@@ -39,14 +38,13 @@ $main-width: 100%;
     display: -ms-grid;
     -ms-grid-columns: 15% 85%;
     display: grid;
-    -ms-grid-columns: 15% 85%;
     grid-template-columns: 15% 85%;
     -ms-grid-rows: 3.5rem 4fr 1fr;
     grid-template-rows: 3.5rem 4fr 1fr;
-        grid-template-areas:
-    "sidebar header"
-    "sidebar main"
-    "sidebar footer";
+    grid-template-areas:
+      "sidebar header"
+      "sidebar main"
+      "sidebar footer";
   }
 }
 
@@ -70,7 +68,6 @@ $main-width: 100%;
     -ms-grid-column: 1;
     grid-area: sidebar;
     padding: $space;
-    margin-bottom: $space-double;
 
     > div {
       position: fixed;
@@ -78,10 +75,6 @@ $main-width: 100%;
       flex-flow: column nowrap;
       justify-content: space-evenly;
     }
-
-
-      width: $sidebar-width;
-      margin-bottom: 0;
   }
 }
 
@@ -94,7 +87,6 @@ $main-width: 100%;
   }
 
   @include large {
-
     &--with-sidebar {
       margin-right: $gutter;
       margin-left: $gutter;
