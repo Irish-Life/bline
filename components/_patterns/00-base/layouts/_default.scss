@@ -26,17 +26,9 @@ $main-width: 100%;
   width: 100%;
   -ms-grid-columns: 100%;
   grid-template-columns: 100%;
-<<<<<<< Updated upstream
   -ms-grid-rows: 3.5rem 4rem 4fr 1fr;
   grid-template-rows: 3.5rem 4rem 4fr 1fr;
-
-    grid-template-areas:
-=======
-  -ms-grid-rows: 3.5rem 3.5rem 4fr 1fr;
-  grid-template-rows: 3.5rem 3.5rem 4fr 1fr;
   grid-template-areas:
-    "header"
->>>>>>> Stashed changes
     "sidebar"
     "header"
     "main"
@@ -95,7 +87,6 @@ $main-width: 100%;
   }
 
   @include large {
-
     &--with-sidebar {
       margin-right: $gutter;
       margin-left: $gutter;
