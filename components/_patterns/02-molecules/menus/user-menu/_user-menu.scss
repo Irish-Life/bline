@@ -1,0 +1,19 @@
+.user-menu {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.user-menu__item {
+  margin: 0 $space-one-half;
+  align-self: center;
+}
+
+.user-menu__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
