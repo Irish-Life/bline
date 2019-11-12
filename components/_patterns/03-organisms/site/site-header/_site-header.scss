@@ -6,13 +6,15 @@
   border-bottom: 1px solid $gray-lightest;
   -webkit-box-shadow: 0 5px 2px -2px rgba(62, 60, 98, 0.08);
           box-shadow: 0 5px 2px -2px rgba(62, 60, 98, 0.08);
-  max-height: $space-quadruple;
   z-index: 10;
 }
 
 .site-header {
   padding: $space-one-half $space;
   background-color: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 @media (max-width: $small) {
