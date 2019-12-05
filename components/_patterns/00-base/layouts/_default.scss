@@ -101,6 +101,15 @@ $main-width: 100%;
   }
 }
 
+.main-content--landing-page {
+
+  @include large {
+    > div {
+      padding-top: 0;
+    }
+  }
+}
+
 //
 // Layout Using CSS Grid (NO IE11 support)
 // Remove Flexbox code above and uncomment this section to use CSS Grid.
