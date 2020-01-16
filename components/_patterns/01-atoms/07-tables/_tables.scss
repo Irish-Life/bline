@@ -1,4 +1,4 @@
-$table-gray: #f8f8f8;
+$table-gray: $gray;
 $table-border: $gray-lightest;
 
 .table {
@@ -23,7 +23,7 @@ $table-border: $gray-lightest;
 }
 
 .table__heading-cell {
-  color: $black;
+  color: $black-near;
   font-weight: 700;
   padding: 1.2em;
   text-align: left;

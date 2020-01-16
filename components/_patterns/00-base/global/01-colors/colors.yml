@@ -1,10 +1,10 @@
 items:
   - name: $white
-    value: white
+    value: '#ffffff'
   - name: $near-white
-    value: '#f2f2f2'
+    value: '#d7d9df'
   - name: $gray-lightest
-    value: '#e5e5e5'
+    value: '#edeff2'
   - name: $gray-lighter
     value: '#ccc'
   - name: $gray-light
@@ -15,18 +15,20 @@ items:
     value: '#4c4c4c'
   - name: $black
     value: '#333'
+  - name: $black-near
+    value: '#212145'
   - name: $purple-light
     value: '#717fe1'
   - name: $purple-regular
     value: '#5261ac'
   - name: $purple-dark
-    value: '#475496'
+    value: '#565682'
   - name: $indigo-regular
     value: '#026'
   - name: $blue-light
-    value: '#2196f3'
+    value: '#bce1ee'
   - name: $green-light
-    value: '#50c9b5'
+    value: '#0fb2ab'
   - name: $salmon-regular
     value: '#d68a8a'
   - name: $green-dark
@@ -35,6 +37,8 @@ items:
     value: '#f6a737'
   - name: $brown-regular
     value: '#675c53'
+  - name: $purple-pale
+    value: '#dce1ee'
 meta:
   description: >-
     To add to these items, use Sass variables that start with <code>$</code> in
