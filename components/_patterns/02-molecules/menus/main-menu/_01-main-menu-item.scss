@@ -28,7 +28,7 @@
 
 // Expand Button
 .expand-sub {
-  background-color: $black;
+  background-color: $black-near;
   cursor: pointer;
   display: block;
   width: 20%;
@@ -57,7 +57,7 @@
 
   // See main-menu.js
   &--open {
-    background-color: $black;
+    background-color: $black-near;
     color: $near-white;
 
     &::after {

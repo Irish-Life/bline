@@ -1,7 +1,8 @@
 .block__recent-docs-list {
-  background-color: $white;
-  border: 1px solid $gray-dark;
+  border-radius: $space;
+  background-color: #ffffff;
   padding: $space;
+  min-width: 315px;
 }
 
 .recent-docs-list {
@@ -10,4 +11,10 @@
 
 .recent-docs-list__title {
   @include heading-small($color: $gray-dark);
+}
+
+.recent-docs-list__item {
+  a {
+    @include heading-xs();
+  }
 }

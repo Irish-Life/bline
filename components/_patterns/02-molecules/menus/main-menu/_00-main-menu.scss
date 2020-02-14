@@ -69,7 +69,7 @@ $main-menu-medium: 43em;
   &:hover {
     @include breakpoint($main-menu-medium) {
       opacity: 1;
-      background-color: $black;
+      background-color: $black-near;
       transition: all 0.2s;
 
       .main-menu__link--sub {
@@ -79,7 +79,7 @@ $main-menu-medium: 43em;
         &:active,
         &:hover {
           color: $white;
-          background-color: $black;
+          background-color: $black-near;
         }
       }
     }
