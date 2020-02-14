@@ -14,3 +14,9 @@ items:
     decorative: "true"
     title: "Decorative Icon"
     desc: "FontAwesome's smile-wink icon"
+  4:
+    name: "Battery"
+    value: "battery"
+    decorative: "true"
+    title: "Battery Icon"
+    desc: "Material battery icon"

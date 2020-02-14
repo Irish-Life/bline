@@ -1,12 +1,13 @@
 // A
 .main-menu__link {
-  color: $blue-light;
-  display: block;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: $space $space-triple $space $space-double;
-  text-decoration: none;
-  font-weight: bold;
+  // color: $purple-dark;
+  // display: block;
+  // font-size: 1.2rem;
+  // line-height: 1.5;
+  // padding: $space $space-triple $space $space-double;
+  // text-decoration: none;
+  // font-weight: bold;
+  @include heading-medium;
 
   &--with-sub {
     width: 80%;
