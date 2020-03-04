@@ -39,6 +39,7 @@
 {% set bgcolor = content.field_section_background_colour[0]["#markup"] ?: color_class %}
 {% set bundle = paragraph.bundle ?: base_class %}
 {% set image = content.field_section_image|without("label") %}
+{% set cta = content.field_section_cta_button %}
 {%
   set classes = [
     "paragraph"|clean_class,
@@ -68,6 +69,13 @@
         } %}
     {% else %}
       {{ content.field_section_body_text }}
+    {% endif %}
+    {% if cta[0] %}
+      {% include "@atoms/01-links/link/link.twig" with {
+              link_base_class: "paragraph--section__cta",
+              link_url: cta[0]["#url"],
+              link_content: cta[0]["#title"]
+          } %}
     {% endif %}
 {% else %}
   {{ dummy_content|raw }}
