@@ -98,3 +98,9 @@
     margin-top: $space-quadruple;
   }
 }
+
+.paragraph--section__cta {
+  @include button-cta;
+
+  margin-top: $space;
+}
