@@ -1,0 +1,28 @@
+.event-listings__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 946px;
+  height: 126px;
+  border-radius: 12px;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  padding: 1rem;
+
+  > * {
+    @include heading-small;
+  }
+}
+
+.event-listings__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1rem;
+
+  > p {
+    @include heading-medium;
+  }
+}
